@@ -107,7 +107,7 @@ arrivals_for_df.to_sql('arrivals_nonresidents', con=engine, if_exists='append', 
 print("Data loaded!")
 
 
-# We can export the .csv via pandas func or Mysql workbench ide
+# We can export the .csv via pandas func or Mysql workbench IDE
 nights_tot_df.to_csv('Nights at tourist accommodation establishments.csv', sep='\t', index=False)
 nights_for_df.to_csv('Nights spent by non-residents at tourist accommodation establishments.csv', sep='\t', index=False)
 arrivals_tot_df.to_csv('Arrivals at tourist accommodation establishments.csv', sep='\t', index=False)
